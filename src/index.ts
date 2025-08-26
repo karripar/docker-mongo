@@ -7,7 +7,7 @@ const port = process.env.PORT || 3000;
   try {
     await mongoConnect();
     app.listen(port, () => {
-      console.log(`Listening: http://localhost:${port}`);
+      console.log(`Listening: http://0.0.0.0:${port}`);
     });
   } catch (error) {
     console.log('Server error', (error as Error).message);
